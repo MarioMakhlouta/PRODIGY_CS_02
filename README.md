@@ -22,21 +22,21 @@ pip install -r requirements.txt
 
 From this folder, after installing dependencies:
 
-**XOR (default)** â€” reversible with the same key:
+**XOR (default)** - reversible with the same key:
 
 ```bash
 python image_crypto.py encrypt photo.jpg scrambled.png -k "your-secret-key" -m xor
 python image_crypto.py decrypt scrambled.png restored.png -k "your-secret-key" -m xor
 ```
 
-**Add / subtract (mod 256)** â€” encryption adds a key-derived byte per channel; decryption subtracts:
+**Add / subtract (mod 256)** - encryption adds a key-derived byte per channel; decryption subtracts:
 
 ```bash
 python image_crypto.py encrypt photo.png out.png -k "mykey" -m add
 python image_crypto.py decrypt out.png back.png -k "mykey" -m add
 ```
 
-**Swap red and blue** â€” no secret material; encrypt and decrypt both apply the same swap (so one round-trip restores the image). You can omit `-k` for this mode:
+**Swap red and blue** - no secret material; encrypt and decrypt both apply the same swap (so one round-trip restores the image). You can omit `-k` for this mode:
 
 ```bash
 python image_crypto.py encrypt photo.png swapped.png -m swap_rb
@@ -64,4 +64,4 @@ This is a **learning demo**, not a substitute for real image protection. The XOR
 
 ## Author
 
-**Mario Makhlouta** â€” intern at Prodigy InfoTech (April 2026). Project: **PRODIGY_CS_02**.
+**Mario Makhlouta** - intern at Prodigy InfoTech (April 2026). Project: **PRODIGY_CS_02**.
