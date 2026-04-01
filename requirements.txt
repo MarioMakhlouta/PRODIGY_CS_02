@@ -1,0 +1,3 @@
+# PRODIGY_CS_02 — image pixel manipulation
+Pillow>=10.0.0
+numpy>=1.24.0
