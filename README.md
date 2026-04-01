@@ -1,4 +1,4 @@
-# PRODIGY_CS_02 â€” Pixel Manipulation for Image Encryption
+# PRODIGY_CS_02 - Pixel Manipulation for Image Encryption
 
 Educational tool for the Prodigy InfoTech Cyber Security **Task-02**: encrypt and decrypt images by manipulating pixels (XOR, modular addition/subtraction, and a reversible red/blue channel swap).
 
